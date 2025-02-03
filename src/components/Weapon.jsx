@@ -3,6 +3,7 @@
 // import white from '../icons/crescendum.png'
 // import blue from '../icons/infernum.png'
 // import red from '../icons/severum.png'
+import { motion } from "motion/react"
 
 export default function Weapon(props) {
 
@@ -41,12 +42,12 @@ export default function Weapon(props) {
 
     return (
         <>
-        <div>
+        <motion.div key={props.color} exit={{opacity : 0}}>
             {/* <img src={imgChoice} alt="" /> */}
             <img src={require(`../icons/${imgChoice}`)} />
             <p>{colorChoice}</p>
         
-        </div>
+        </motion.div>
         </>
     )
 }
