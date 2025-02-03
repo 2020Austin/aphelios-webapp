@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  margin: 300px auto;
+  width: 50%;
 }
 
 .App-logo {
@@ -35,4 +37,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.WeaponDisplay {
+  display:flex;
+  gap: 50px
+}
+
+.hand {
+  display:flex;
+  gap: 10px;
+}
+
+.bag {
+  display:flex;
+  gap: 10px;
 }
